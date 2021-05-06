@@ -223,10 +223,47 @@ a.results {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   width: 100%;
   margin: auto;
-  padding-left: 30px;
 }
 #left {
   margin-right: 30px;
+}
+#current {
+  color: #c2957e;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+    padding-left: 10px;
+  }
+  .hamburger-label {
+    float: right;
+    color: #b94a00;
+    padding-left: 10px;
+  }
+  header nav {
+    display: block;
+  }
+  label i {
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  #hamburger-menu {
+    display: none;
+  }
+  label .fas {
+    display: none;
+  }
 }
