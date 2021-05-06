@@ -1,0 +1,232 @@
+body {
+  margin: auto;
+  max-width: 100%;
+}
+h1,
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 45px;
+  color: #c2957e;
+  text-transform: uppercase;
+  margin: 0px;
+}
+h2 {
+  text-align: right;
+  padding: 0px 100px 30px 0px;
+  margin: 0px;
+}
+h3 {
+  font-family: rockwell;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0px;
+}
+header {
+  background-color: black;
+}
+nav {
+  text-align: center;
+}
+.nav {
+  font-family: rockwell;
+  font-size: 25px;
+  color: #ffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 10px 30px 10px 30px;
+}
+section {
+  background-color: #efefef;
+  margin-bottom: 30px;
+}
+h4 {
+  font-family: rockwell;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 20px 5px 20px;
+  margin: none;
+  text-align: center;
+}
+.button {
+  background-color: #c2957e;
+  text-decoration: none;
+}
+a:visited .button,
+a:link .button {
+  color: black;
+}
+.view {
+  margin: auto;
+  text-align: center;
+}
+footer {
+  color: #ffff;
+  font-family: rockwell;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: normal;
+  background-color: black;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.fas {
+  color: black;
+}
+.fab {
+  padding: 0px 5px 0px 5px;
+}
+.headerimg {
+  padding-top: 10px;
+  margin: auto;
+  max-width: 100%;
+}
+
+.aboutme,
+.contactme {
+  font-family: rockwell;
+  font-size: 20px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px 0px 40px 0px;
+}
+.contactme {
+  max-width: 600px;
+}
+button {
+  font-family: rockwell;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #c2957e;
+  border: none;
+  padding: 10px 15px 5px 15px;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+input,
+textarea {
+  border: none;
+  padding: 5px 0px 5px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+textarea {
+  height: 70px;
+}
+.form-error {
+  padding-bottom: 30px;
+}
+.form-error {
+  color: red;
+  display: none;
+}
+.resultspost {
+  max-width: 600px;
+  margin: auto;
+}
+.date {
+  font-family: rockwell;
+  font-size: 15px;
+  text-align: right;
+  padding: 20px 0px 10px 0px;
+}
+.post {
+  font-family: times;
+  font-size: 20px;
+}
+.results {
+  max-width: 600px;
+  margin: auto;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 200px;
+  gap: 50px;
+}
+a:link .results,
+a:visited .results {
+  color: black;
+  text-decoration: none;
+}
+a:link .post,
+a:visited .post,
+a:link .date,
+a:visited .date,
+a:link h3,
+a:visited h3,
+a:link .readmore,
+a:visited .readmore {
+  color: black;
+}
+.results img {
+  width: 100%;
+  height: 200px;
+}
+.resultspost img {
+  width: 100%;
+  height: 100%;
+}
+.carousel img {
+  max-height: 200px;
+  max-width: 300px;
+}
+figure {
+  margin: 0px;
+}
+.results h3 {
+  font-size: 30px;
+  text-align: left;
+}
+a.results {
+  gap: 0px;
+}
+.results .post {
+  max-height: 370px;
+  overflow: hidden;
+}
+.results .date {
+  padding: 0px;
+}
+.readmore,
+.comments {
+  font-family: rockwell;
+  text-transform: uppercase;
+  text-align: right;
+}
+.comments {
+  padding-top: 20px;
+}
+.carousel p {
+  display: none;
+}
+.carousel {
+  max-width: 1000px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 300px;
+}
+.carousel h3 {
+  font-size: 25px;
+}
+.carousel .date {
+  padding: 0px;
+}
+.latestpost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding-left: 30px;
+}
+#left {
+  margin-right: 30px;
+}
