@@ -45,3 +45,16 @@ getPost();
 
 
 
+const img = document.querySelectorAll(".resultspost img");
+
+const imgModal = document.querySelectorAll(".modal");
+
+img.onclik = function () {
+    imgModal.style.display = "block";
+}
+
+const close = document.querySelector("body")
+
+close.onclik = function () {
+    imgModal.style.display = "none";
+}

@@ -1,4 +1,4 @@
-const url = "https://exam1.minadesign.one/wp-json/wp/v2/posts";
+const url = "https://exam1.minadesign.one/wp-json/wp/v2/posts?per_page=14";
 
 const resultsContainer = document.querySelector(".results");
 
