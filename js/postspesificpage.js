@@ -23,6 +23,10 @@ async function getPost() {
 
     const product = results;
 
+    const viewImg = document.querySelector(".modal");
+    const view = document.querySelector(".resultspost");
+    viewImg.style.display = "none";    
+
         
     const formatDate  = new Date(product.date).toLocaleString("en-GB", {day: "numeric",  month: "numeric", year: "numeric",});
 
@@ -30,10 +34,21 @@ async function getPost() {
                                         <h3>${product.title.rendered}</h3> 
                                         <div class="date">Date: ${formatDate}</div>
                                         <div class="post">${product.content.rendered}</div>
+                                        
                                         <p class="comments">Comments</p>
                                         </div>`;   
                                         
-                                        
+    view.onclick = function () {
+      viewImg.innerHTML = `<div class="modal">${product.content.rendered}</div>`;
+      viewImg.style.display = "block";
+}    
+
+    function removeImg() {
+      viewImg.innerHTML = "";
+      viewImg.style.display = "none"; 
+    }
+        viewImg.addEventListener("click", removeImg);
+  
 
     } catch (error) {
         console.log("an error occurred");
@@ -41,20 +56,57 @@ async function getPost() {
     }
 }
 
+
+
 getPost();
 
+/*var modal = document.querySelector(".modal")
+var img = document.querySelectorAll("img")
 
 
-const img = document.querySelectorAll(".resultspost img");
-
-const imgModal = document.querySelectorAll(".modal");
-
-img.onclik = function () {
-    imgModal.style.display = "block";
+img.onclick = function () {
+  modal.innerHTML = `<div class="modal">
+                        <div class="modal-content">
+                        <button class="closemodal"><i class="fal fa-times"></i></button>
+                        <img src="${src}" class="imgmodal" alt="${alt}">
+                        <span class="alttext">${caption}</span>
+                        </div>
+                    </div>`;
 }
 
-const close = document.querySelector("body")
 
-close.onclik = function () {
-    imgModal.style.display = "none";
-}
+const modal = document.querySelector(".modal");
+const img = document.querySelectorAll("img");
+
+img.addEventListener("click", function () {
+    
+    modal.innerHTML = `<div class="modal">
+                        <div class="modal-content">
+                        <button class="closemodal"><i class="fal fa-times"></i></button>
+                        <img src="${product.content.rendered}" class="imgmodal">
+                        </div>
+                        </div>`;
+
+    modal.style.display = "block";
+});
+
+ 
+
+    const img = document.querySelectorAll("div .resultpost");
+    const modal = document.querySelector(".modal");
+
+    img.onclick = function () {
+      modal.innerHTML = `<div class="modal"><p>hello</p></div>`;
+      
+    }
+
+
+
+const viewImg = document.querySelector(".modal");
+const view = document.querySelector(".resultspost");
+
+
+view.onclick = function () {
+      viewImg.innerHTML = `<div class="post">${product.content.rendered}</div>`;
+}      
+ */

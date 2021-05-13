@@ -40,7 +40,7 @@ const span = document.getElementsByClassName("close")[0];
 span.onclik = function () {
     modal.style.display = "none";
 }
-*/
+
 
 const modal = document.querySelector("#modal")
 const modalImg = document.querySelector("#modal img")
@@ -66,4 +66,22 @@ const addEvents = () => {
         }
     })
     modal.addEventListener("click", handleClose)
+}
+*/
+
+
+    let modal = document.querySelector("#modal");
+
+    let img = document.querySelector(".resultspost img");
+    let imgModal = document.querySelector("#img");
+
+img.onclick = function(){
+modal.style.display = "block";
+modalImg.src = img.src;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
 }
