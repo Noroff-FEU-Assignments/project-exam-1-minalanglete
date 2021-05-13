@@ -58,7 +58,7 @@ const handleClose = (e) => {
 }
 
 const addEvents = () => {
-    const images = document.querySelectorAll("img")
+    const images = document.querySelectorAll(".resultspost img")
     images.forEach(image => {
         if (!image.classList.contains("modal-image")) {
             image.addEventListener("click", handleClick)
