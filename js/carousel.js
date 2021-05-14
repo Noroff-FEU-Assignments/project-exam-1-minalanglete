@@ -1,4 +1,4 @@
-let url = "https://exam1.minadesign.one/wp-json/wp/v2/posts?per_page=15";
+let url = "https://exam1.minadesign.one/wp-json/wp/v2/posts?per_page=16";
 
 
 const resultsContainer1 = document.querySelector(".carousel1");
@@ -34,9 +34,9 @@ async function getPosts() {
         const formatDate  = new Date(posts[i].date).toLocaleString("en-GB", {day: "numeric",  month: "numeric", year: "numeric",});
 
         resultsContainer1.innerHTML += `<a href="postspecificpage.html?id=${posts[i].id}" class="results"><h3>${posts[i].title.rendered}</h3> 
-                                        <div class="date">Date: ${formatDate}</div>
-                                        <div class="post">${posts[i].content.rendered}</div>
                                         
+                                        <div class="post">${posts[i].content.rendered}</div>
+                                        <div class="date">Date: ${formatDate} - Marbella</div>
                                         <p class="readmore">Read More <i class="fas fa-chevron-right"></i></p>
                                         </a>`;
     }
@@ -50,9 +50,9 @@ async function getPosts() {
         const formatDate  = new Date(posts[i].date).toLocaleString("en-GB", {day: "numeric",  month: "numeric", year: "numeric",});
 
         resultsContainer2.innerHTML += `<a href="postspecificpage.html?id=${posts[i].id}" class="results"><h3>${posts[i].title.rendered}</h3> 
-                                        <div class="date">Date: ${formatDate}</div>
-                                        <div class="post">${posts[i].content.rendered}</div>
                                         
+                                        <div class="post">${posts[i].content.rendered}</div>
+                                        <div class="date">Date: ${formatDate} - Marbella</div>
                                         <p class="readmore">Read More <i class="fas fa-chevron-right"></i></p>
                                         </a>`;
 
@@ -69,9 +69,9 @@ async function getPosts() {
         const formatDate  = new Date(posts[i].date).toLocaleString("en-GB", {day: "numeric",  month: "numeric", year: "numeric",});
 
         resultsContainer3.innerHTML += `<a href="postspecificpage.html?id=${posts[i].id}" class="results"><h3>${posts[i].title.rendered}</h3> 
-                                        <div class="date">Date: ${formatDate}</div>
-                                        <div class="post">${posts[i].content.rendered}</div>
                                         
+                                        <div class="post">${posts[i].content.rendered}</div>
+                                        <div class="date">Date: ${formatDate} - Marbella</div>
                                         <p class="readmore">Read More <i class="fas fa-chevron-right"></i></p>
                                         </a>`;
 
@@ -87,9 +87,9 @@ async function getPosts() {
         const formatDate  = new Date(posts[i].date).toLocaleString("en-GB", {day: "numeric",  month: "numeric", year: "numeric",});
 
         resultsContainer4.innerHTML += `<a href="postspecificpage.html?id=${posts[i].id}" class="results"><h3>${posts[i].title.rendered}</h3> 
-                                        <div class="date">Date: ${formatDate}</div>
-                                        <div class="post">${posts[i].content.rendered}</div>
                                         
+                                        <div class="post">${posts[i].content.rendered}</div>
+                                        <div class="date">Date: ${formatDate} - Marbella</div>
                                         <p class="readmore">Read More <i class="fas fa-chevron-right"></i></p>
                                         </a>`;
 
@@ -106,9 +106,9 @@ async function getPosts() {
 
 
         resultsContainer5.innerHTML += `<a href="postspecificpage.html?id=${posts[i].id}" class="results"><h3>${posts[i].title.rendered}</h3> 
-                                        <div class="date">Date: ${formatDate}</div>
-                                        <div class="post">${posts[i].content.rendered}</div>
                                         
+                                        <div class="post">${posts[i].content.rendered}</div>
+                                        <div class="date">Date: ${formatDate} - Marbella</div>
                                         <p class="readmore">Read More <i class="fas fa-chevron-right"></i></p>
                                         </a>`;
 

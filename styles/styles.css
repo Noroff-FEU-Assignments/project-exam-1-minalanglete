@@ -266,12 +266,14 @@ a.results {
   display: flex;
   max-width: 100%;
 }
+main {
+  background-color: #efefef;
+}
 .carrocontainer {
   width: 60%;
   margin: 10px auto;
 }
 .carro {
-  border: 2px solid black;
   height: 400px;
   overflow: hidden;
   position: relative;
@@ -305,7 +307,7 @@ a.results {
 .carousel4,
 .carousel5 {
   display: flex;
-  max-width: 500px;
+  max-width: 800px;
   gap: 20px;
   margin: auto;
 }
@@ -315,6 +317,39 @@ a.results {
 .carousel4 p,
 .carousel5 p {
   display: none;
+}
+.carousel1 h3,
+.carousel2 h3,
+.carousel3 h3,
+.carousel4 h3,
+.carousel5 h3 {
+  font-size: 17px;
+}
+.carousel1 .date,
+.carousel2 .date,
+.carousel3 .date,
+.carousel4 .date,
+.carousel5 .date {
+  font-size: 15px;
+  text-align: left;
+}
+.carousel1 img,
+.carousel2 img,
+.carousel3 img,
+.carousel4 img,
+.carousel5 img {
+  width: 100%;
+  height: 100%;
+}
+.carousel5 img {
+  max-width: 270px;
+  padding-left: 55px;
+}
+.carousel5 .date {
+  padding-left: 55px;
+}
+.carousel5 h3 {
+  padding-left: 55px;
 }
 .arrows .arrow {
   position: absolute;
