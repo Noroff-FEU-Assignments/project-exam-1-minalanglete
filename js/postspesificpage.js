@@ -25,6 +25,7 @@ async function getPost() {
 
     const viewImg = document.querySelector(".modal");
     const view = document.querySelector(".resultspost");
+
     viewImg.style.display = "none";    
 
         
@@ -39,7 +40,7 @@ async function getPost() {
                                         </div>`;   
                                         
     view.onclick = function () {
-      viewImg.innerHTML = `<div class="modal">${product.content.rendered}</div>`;
+      viewImg.innerHTML =   `<div class="modal">${product.content.rendered}</div>`;
       viewImg.style.display = "block";
 }    
 

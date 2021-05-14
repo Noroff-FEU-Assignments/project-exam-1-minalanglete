@@ -18,7 +18,7 @@
       <nav>
         <a href="index.html" class="nav"><h1>Miss Fitness</h1></a>
         <a href="index.html" id="current" class="nav">Home</a>
-        <a href="posts.html" class="nav">Posts</a>
+        <a href="posts.html" class="nav">Blog</a>
         <a href="about.html" class="nav">About me</a>
         <a href="contact.html" class="nav">Contact</a>
       </nav>
@@ -31,12 +31,24 @@
     />
     <h2>Fitness for life</h2>
     <h3>Latest posts</h3>
-    <div class="postcarousel">
-      <section class="latestpost">
-        <i class="fas fa-chevron-left" id="left"></i>
-        <section class="carousel"></section>
-        <i class="fas fa-chevron-right"></i>
-      </section>
+
+    <div class="carrocontainer">
+        <div class="carro">
+            <div class="container">
+                <section class="carousel1"></section>
+                <section class="carousel2"></section>
+                <section class="carousel3"></section>
+                <section class="carousel4"></section>
+                <section class="carousel5"></section>
+            </div>
+            <div class="arrows"> 
+                <span class="arrow left"><i class="fas fa-chevron-left"></i></span>
+                <span class="arrow right"><i class="fas fa-chevron-right"></i></span>
+            </div>  
+        </div> 
+    </div> 
+
+    
       <div class="view">
         <a href="posts.html" class="button">
           <h4 class="button">
@@ -54,6 +66,9 @@
       <i class="fab fa-youtube-square fa-2x"></i>
       <p>Copyrights © 2021 Miss Fitness</p>
     </footer>
+
     <script src="js/carousel.js"></script>
+    <script src="js/movecarousel.js"></script>
+    
   </body>
 </html>
