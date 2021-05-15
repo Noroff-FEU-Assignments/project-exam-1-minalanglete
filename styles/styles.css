@@ -497,12 +497,12 @@ main {
   }
   button {
     font-family: rockwell;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     background-color: #c2957e;
     border: none;
-    padding: 10px 15px 5px 15px;
+    padding: 10px 25px 5px 25px;
     margin-left: auto;
     margin-top: 40px;
     border-radius: 8px;
