@@ -185,10 +185,6 @@ a:visited .readmore {
   height: 100%;
   cursor: pointer;
 }
-.carousel img {
-  max-height: 200px;
-  max-width: 300px;
-}
 figure {
   margin: 0px;
 }
@@ -215,22 +211,7 @@ a.results {
 .comments {
   padding-top: 20px;
 }
-.carousel p {
-  display: none;
-}
-.carousel {
-  max-width: 1000px;
-  text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 300px;
-}
-.carousel h3 {
-  font-size: 25px;
-}
-.carousel .date {
-  padding: 0px;
-}
+
 .latestpost {
   display: inline-flex;
   align-items: center;
@@ -248,6 +229,12 @@ a.results {
 .view {
   cursor: pointer;
 }
+main {
+  background-color: #efefef;
+}
+
+/*-----------modal-----------------------------------------------------------------*/
+
 .modal p {
   display: none;
 }
@@ -266,15 +253,35 @@ a.results {
   display: flex;
   max-width: 100%;
 }
-main {
-  background-color: #efefef;
+
+/*-----------carousel-----------------------------------------------------------------*/
+
+.carousel img {
+  max-height: 200px;
+  max-width: 300px;
+}
+.carousel p {
+  display: none;
+}
+.carousel {
+  max-width: 1000px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 300px;
+}
+.carousel h3 {
+  font-size: 25px;
+}
+.carousel .date {
+  padding: 0px;
 }
 .carrocontainer {
   width: 60%;
   margin: 10px auto;
 }
 .carro {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -284,13 +291,7 @@ main {
   width: 500%;
   transition: all 0.3s;
 }
-/*.container section {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*/
+
 .container .carousel1,
 .container .carousel2,
 .container .carousel3,
@@ -362,6 +363,31 @@ main {
 .arrow.right {
   right: 10px;
 }
+
+/*-----------media queries-----------------------------------------------------------------*/
+
+@media only screen and (max-width: 1400px) {
+  .carousel1,
+  .carousel2,
+  .carousel3,
+  .carousel4,
+  .carousel5 {
+    max-width: 500px;
+    gap: 10px;
+  }
+  .carousel5 img {
+    max-width: 170px;
+    padding-left: 55px;
+  }
+  .nav {
+    font-size: 15px;
+  }
+  .modal img {
+    height: 100%;
+    width: 75%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   nav {
     display: none;
@@ -386,9 +412,32 @@ main {
     background-color: black;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
   .headerimg {
     margin-top: 50px;
+  }
+  .carousel1,
+  .carousel2,
+  .carousel3,
+  .carousel4,
+  .carousel5 {
+    max-width: 350px;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .carousel5 img {
+    max-width: 350px;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  .carrocontainer {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .carro {
+    height: 900px;
+    z-index: 0;
   }
 }
 
@@ -398,5 +447,64 @@ main {
   }
   label .fas {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel1,
+  .carousel2,
+  .carousel3,
+  .carousel4,
+  .carousel5 {
+    max-width: 350px;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .carousel5 img {
+    max-width: 350px;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  .carrocontainer {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .carro {
+    height: 1000px;
+    z-index: 0;
+  }
+  .results {
+    max-width: 400px;
+    flex: 0 300px;
+  }
+  .results .post {
+    max-height: 350px;
+    overflow: hidden;
+  }
+  .resultspost {
+    max-width: 350px;
+    margin: auto;
+  }
+  .aboutme,
+  .contactme {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px 0px 40px 0px;
+  }
+  h2 {
+    padding: 0px 10px 30px 0px;
+    margin: 0px;
+  }
+  button {
+    font-family: rockwell;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #c2957e;
+    border: none;
+    padding: 10px 15px 5px 15px;
+    margin-left: auto;
+    margin-top: 40px;
+    border-radius: 8px;
   }
 }
