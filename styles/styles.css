@@ -523,4 +523,9 @@ main {
     padding-left: 0px;
     margin-top: 0px;
   }
+  .resultspost {
+    max-width: 300px;
+    padding: 5px;
+    margin: auto;
+  }
 }
