@@ -2,6 +2,7 @@ let url = "https://exam1.minadesign.one/wp-json/wp/v2/posts?per_page=10";
 
 const resultsContainer = document.querySelector(".results");
 const morePosts = document.querySelector(".view");
+const moreButton = document.querySelector(".button");
 
 let pageCount = 1;
 
@@ -55,3 +56,5 @@ morePosts.addEventListener("click", function () {
   morePosts.style.display = "none";
   getPosts();
 });
+
+

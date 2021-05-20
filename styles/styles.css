@@ -12,8 +12,12 @@ h2 {
 }
 h2 {
   text-align: right;
-  padding: 0px 100px 30px 0px;
+  padding: 0px 100px 0px 0px;
   margin: 0px;
+  margin-top: -10px;
+}
+.slogan {
+  background-color: black;
 }
 h3 {
   font-family: rockwell;
@@ -507,6 +511,14 @@ main {
     margin-top: 40px;
     border-radius: 8px;
   }
+  h2 {
+    text-align: center;
+    padding: 0px;
+    margin-top: -10px;
+  }
+  footer {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .carousel1,
@@ -527,5 +539,8 @@ main {
     max-width: 300px;
     padding: 5px;
     margin: auto;
+  }
+  footer {
+    font-size: 10px;
   }
 }
