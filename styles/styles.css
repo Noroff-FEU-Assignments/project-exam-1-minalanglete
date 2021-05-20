@@ -4,8 +4,10 @@ body {
 }
 h1,
 h2 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Anton", sans-serif, Impact, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
   font-size: 45px;
+  letter-spacing: 2px;
   color: #c2957e;
   text-transform: uppercase;
   margin: 0px;
@@ -20,7 +22,7 @@ h2 {
   background-color: black;
 }
 h3 {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
@@ -34,7 +36,7 @@ nav {
   text-align: center;
 }
 .nav {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 25px;
   color: #ffff;
   font-weight: bold;
@@ -54,7 +56,7 @@ section {
   margin-bottom: 30px;
 }
 h4 {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -78,7 +80,7 @@ a:link .button {
 }
 footer {
   color: #ffff;
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 20px;
   font-weight: lighter;
   font-style: normal;
@@ -101,7 +103,7 @@ footer {
 
 .aboutme,
 .contactme {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 20px;
   max-width: 400px;
   margin: auto;
@@ -111,7 +113,7 @@ footer {
   max-width: 600px;
 }
 button {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -147,7 +149,7 @@ textarea {
   margin: auto;
 }
 .date {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   font-size: 15px;
   text-align: right;
   padding: 20px 0px 10px 0px;
@@ -208,7 +210,7 @@ a.results {
 }
 .readmore,
 .comments {
-  font-family: rockwell;
+  font-family: "Roboto Slab", serif;
   text-transform: uppercase;
   text-align: right;
 }
@@ -500,7 +502,7 @@ main {
     margin: 0px;
   }
   button {
-    font-family: rockwell;
+    font-family: "Roboto Slab", serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
