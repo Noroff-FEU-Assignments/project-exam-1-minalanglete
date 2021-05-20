@@ -129,7 +129,7 @@ button:hover {
 }
 input,
 textarea {
-  border: none;
+  border: 1px solid black;
   padding: 5px 0px 5px 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -216,6 +216,11 @@ a.results {
 }
 .comments {
   padding-top: 20px;
+  font-weight: bold;
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 30px;
+  cursor: pointer;
 }
 
 .latestpost {
@@ -238,7 +243,9 @@ a.results {
 main {
   background-color: #efefef;
 }
-
+.comment {
+  display: none;
+}
 /*-----------modal-----------------------------------------------------------------*/
 
 .modal p {

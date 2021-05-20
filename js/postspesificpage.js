@@ -36,7 +36,7 @@ async function getPost() {
                                         <div class="date">Date: ${formatDate}</div>
                                         <div class="post">${product.content.rendered}</div>
                                         
-                                        <p class="comments">Comments</p>
+                                        
                                         </div>`;   
                                         
     view.onclick = function () {

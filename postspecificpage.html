@@ -65,6 +65,49 @@
 
     <div class="resultspost"></div>
 
+    <p class="comments">Comments</p>
+
+    <div class="comment">
+      <h3>Comment</h3>
+      <section>
+        <div class="contactme">
+          <form id="contactForm">
+            <div class="form">
+              <label>
+                Name - required
+                <input name="name" id="name" />
+              </label>
+              <div class="form-error" id="nameError">
+                Name must be at least 5 characters long
+              </div>
+            </div>
+
+            <div class="form">
+              <label>
+                Email Address
+                <input name="email" id="email" />
+              </label>
+              <div class="form-error" id="emailError">
+                Enter a valid email address
+              </div>
+            </div>
+
+            <div class="form">
+              <label>
+                Comment
+                <textarea name="message" id="message"></textarea>
+              </label>
+              <div class="form-error" id="messageError">
+                The comment must be at least 25 characters long
+              </div>
+            </div>
+
+            <button>Post comment</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
     <div class="modal"></div>
 
     <footer>
@@ -75,5 +118,6 @@
       <p>Copyrights © 2021 Miss Fitness - Made by Mina Langlete</p>
     </footer>
     <script src="js/postspesificpage.js"></script>
+    <script src="js/comments.js"></script>
   </body>
 </html>
