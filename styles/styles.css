@@ -144,6 +144,9 @@ textarea {
   color: red;
   display: none;
 }
+.buttonsuccess {
+  font-size: 20px;
+}
 .resultspost {
   max-width: 600px;
   margin: auto;

@@ -5,6 +5,9 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
+const messageSuccess = document.querySelector(".success");
+const submitButton = document.querySelector("button");
+
 
 function validateForm (event) {
     event.preventDefault();
@@ -55,4 +58,17 @@ function removeComments() {
 comments.addEventListener("click", function () {
     comment.style.display = "block";
     comments.style.display = "none";
+});
+
+messageSuccess.style.display = "none";
+
+
+
+submitButton.addEventListener("click", function () {
+    if ( (theName.value.trim().length > 5) &&
+        (validateEmail(email.value) === true) &&
+        (message.value.trim().length > 25)
+    )    
+        messageSuccess.style.display = "block";
+        messageSuccess.innerHTML = `<h3 class="buttonsuccess">Your comment has been posted!</h3>`;
 });
