@@ -531,6 +531,9 @@ main {
   footer {
     font-size: 15px;
   }
+  .comments {
+    margin-right: 20px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .carousel1,
