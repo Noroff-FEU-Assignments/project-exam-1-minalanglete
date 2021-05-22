@@ -258,8 +258,9 @@ main {
 }
 
 hr {
-  max-width: 850px;
-  border: 1px solid black;
+  max-width: 810px;
+  border: 1px solid #c2957e;
+  margin-bottom: 12px;
 }
 .crossfit {
   max-width: 800px;
@@ -284,9 +285,13 @@ hr {
   font-size: 25px;
   text-align: left;
 }
-.readmore {
+a {
   text-decoration: none;
 }
+aside {
+  margin-bottom: 40px;
+}
+
 /*-----------modal-----------------------------------------------------------------*/
 
 .modal p {
@@ -494,7 +499,16 @@ hr {
     z-index: 0;
   }
   hr {
-    margin: 20px;
+    margin: auto;
+    max-width: 420px;
+    margin-bottom: 10px;
+  }
+  .programtitle {
+    font-size: 22px;
+  }
+  .crossfit {
+    max-width: 400px;
+    grid-template-areas: "img" "texts";
   }
 }
 
@@ -594,5 +608,14 @@ hr {
   }
   footer {
     font-size: 10px;
+  }
+  .crossfit {
+    max-width: 350px;
+  }
+  .programtitle {
+    font-size: 20px;
+  }
+  hr {
+    max-width: 360px;
   }
 }
