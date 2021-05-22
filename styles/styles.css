@@ -80,7 +80,7 @@ a:link .button {
 }
 footer {
   color: #ffff;
-  font-family: "Roboto Slab", serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
   font-weight: lighter;
   font-style: normal;
@@ -88,6 +88,10 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+a:visited .fab,
+a:link .fab {
+  color: #ffff;
 }
 .fas {
   color: black;
@@ -158,7 +162,7 @@ textarea {
   padding: 20px 0px 10px 0px;
 }
 .post {
-  font-family: times;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
 .results {
@@ -218,14 +222,17 @@ a.results {
   text-align: right;
 }
 .comments {
-  padding-top: 20px;
+  padding: 10px 20px 10px 20px;
   font-weight: bold;
-  max-width: 600px;
-  margin: auto;
-  padding-bottom: 30px;
+  max-width: 100px;
+  margin: 10px auto;
   cursor: pointer;
+  background-color: #c2957e;
+  border-radius: 8px;
 }
-
+.comments:hover {
+  background-color: #ffff;
+}
 .latestpost {
   display: inline-flex;
   align-items: center;
@@ -248,6 +255,11 @@ main {
 }
 .comment {
   display: none;
+}
+
+hr {
+  max-width: 1000px;
+  border: 1px solid black;
 }
 /*-----------modal-----------------------------------------------------------------*/
 
@@ -452,8 +464,11 @@ main {
     margin: 10px auto;
   }
   .carro {
-    height: 900px;
+    height: 1000px;
     z-index: 0;
+  }
+  hr {
+    margin: 20px;
   }
 }
 
@@ -484,10 +499,6 @@ main {
   .carrocontainer {
     width: 100%;
     margin: 10px auto;
-  }
-  .carro {
-    height: 1000px;
-    z-index: 0;
   }
   .results {
     max-width: 400px;
