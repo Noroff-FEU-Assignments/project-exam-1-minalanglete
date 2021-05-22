@@ -500,14 +500,14 @@ aside {
   }
   hr {
     margin: auto;
-    max-width: 420px;
+    max-width: 360px;
     margin-bottom: 10px;
   }
   .programtitle {
-    font-size: 22px;
+    font-size: 20px;
   }
   .crossfit {
-    max-width: 400px;
+    max-width: 350px;
     grid-template-areas: "img" "texts";
   }
 }
@@ -608,14 +608,5 @@ aside {
   }
   footer {
     font-size: 10px;
-  }
-  .crossfit {
-    max-width: 350px;
-  }
-  .programtitle {
-    font-size: 20px;
-  }
-  hr {
-    max-width: 360px;
   }
 }
