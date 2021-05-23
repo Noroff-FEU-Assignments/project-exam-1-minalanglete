@@ -601,9 +601,6 @@ aside {
   h1 {
     font-size: 30px;
   }
-  .results img {
-    height: 190px;
-  }
 }
 @media only screen and (max-width: 400px) {
   .carousel1,
