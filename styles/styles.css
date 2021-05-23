@@ -462,6 +462,7 @@ aside {
   }
   .nav {
     display: block;
+    font-size: 25px;
   }
   #hamburger-menu {
     display: none;
