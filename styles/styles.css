@@ -48,9 +48,7 @@ nav {
 nav a:hover {
   color: #c2957e;
 }
-.button:hover {
-  background-color: #ffff;
-}
+
 section {
   background-color: #efefef;
   margin-bottom: 30px;
@@ -65,19 +63,6 @@ h4 {
   margin: none;
   text-align: center;
 }
-.button {
-  background-color: #c2957e;
-  text-decoration: none;
-  border-radius: 8px;
-}
-a:visited .button,
-a:link .button {
-  color: black;
-}
-.view {
-  margin: auto;
-  text-align: center;
-}
 footer {
   color: #ffff;
   font-family: "Quicksand", sans-serif;
@@ -89,35 +74,29 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-a:visited .fab,
-a:link .fab {
-  color: #ffff;
-}
-.fas {
-  color: black;
-}
-.fab {
-  padding: 0px 5px 0px 5px;
-}
 .headerimg {
   padding-top: 10px;
   margin: auto;
   max-width: 100%;
 }
-span i {
-  font-size: 30px;
-}
 
-.aboutme,
-.contactme {
-  font-family: "Roboto Slab", serif;
-  font-size: 20px;
-  max-width: 400px;
+/*-----------buttons-----------------------------------------------------------------*/
+
+.view {
   margin: auto;
-  padding: 20px 0px 40px 0px;
+  text-align: center;
 }
-.contactme {
-  max-width: 600px;
+.button {
+  background-color: #c2957e;
+  text-decoration: none;
+  border-radius: 8px;
+}
+a:visited .button,
+a:link .button {
+  color: black;
+}
+.button:hover {
+  background-color: #ffff;
 }
 button {
   font-family: "Roboto Slab", serif;
@@ -137,26 +116,26 @@ button:hover {
 .contactme button {
   margin: auto;
 }
-input,
-textarea {
-  border: 1px solid black;
-  padding: 5px 0px 5px 10px;
-  margin-bottom: 10px;
-  width: 100%;
+
+/*-----------icon-----------------------------------------------------------------*/
+
+a:visited .fab,
+a:link .fab {
+  color: #ffff;
 }
-textarea {
-  height: 70px;
+.fas {
+  color: black;
 }
-.form-error {
-  padding-bottom: 30px;
+.fab {
+  padding: 0px 5px 0px 5px;
 }
-.form-error {
-  color: red;
-  display: none;
+
+span i {
+  font-size: 30px;
 }
-.buttonsuccess {
-  font-size: 20px;
-}
+
+/*-----------API-----------------------------------------------------------------*/
+
 .resultspost {
   max-width: 600px;
   margin: auto;
@@ -221,24 +200,6 @@ a.results {
 .results .date {
   padding: 0px;
 }
-.readmore,
-.comments {
-  font-family: "Roboto Slab", serif;
-  text-transform: uppercase;
-  text-align: right;
-}
-.comments {
-  padding: 10px 20px 10px 20px;
-  font-weight: bold;
-  max-width: 100px;
-  margin: 10px auto;
-  cursor: pointer;
-  background-color: #c2957e;
-  border-radius: 8px;
-}
-.comments:hover {
-  background-color: #ffff;
-}
 .latestpost {
   display: inline-flex;
   align-items: center;
@@ -246,6 +207,41 @@ a.results {
 
   width: 100%;
   margin: auto;
+}
+
+/*-----------contactform/comments/about me-----------------------------------------------------------------*/
+
+.aboutme,
+.contactme {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px 0px 40px 0px;
+}
+.contactme {
+  max-width: 600px;
+}
+
+input,
+textarea {
+  border: 1px solid black;
+  padding: 5px 0px 5px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+textarea {
+  height: 70px;
+}
+.form-error {
+  padding-bottom: 30px;
+}
+.form-error {
+  color: red;
+  display: none;
+}
+.buttonsuccess {
+  font-size: 20px;
 }
 #left {
   margin-right: 30px;
@@ -262,6 +258,29 @@ main {
 .comment {
   display: none;
 }
+.comments:hover {
+  background-color: #ffff;
+}
+.readmore,
+.comments {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  text-align: right;
+}
+.comments {
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  max-width: 100px;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: #c2957e;
+  border-radius: 8px;
+}
+.success {
+  padding-bottom: 20px;
+}
+
+/*-----------program exercise on homepage-----------------------------------------------------------------*/
 
 hr {
   max-width: 810px;
