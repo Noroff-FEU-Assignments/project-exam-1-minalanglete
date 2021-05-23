@@ -622,4 +622,10 @@ aside {
   footer {
     font-size: 10px;
   }
+  hr {
+    max-width: 300px;
+  }
+  .crossfit {
+    max-width: 280px;
+  }
 }
