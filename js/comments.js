@@ -34,12 +34,7 @@ function validateForm (event) {
 
 form.addEventListener("submit", validateForm);
 
-function submit() {
-    if (validateForm.onClick === true)
-        console.log("succsesfull input")
-} 
-       
-submit();
+
 
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
