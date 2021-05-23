@@ -598,6 +598,9 @@ aside {
   span i {
     font-size: 14px;
   }
+  h1 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .carousel1,
